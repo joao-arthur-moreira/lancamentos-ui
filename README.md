@@ -1,5 +1,10 @@
+
+# Criando um componente para mensagens de erro
+
+ng g c message —spec=false —inline-template —inline-style
+
 # Infos
-Instalando currencyMask:
+## Instalando currencyMask:
 npm install ng2-currency-mask --save
 import { CurrencyMaskModule } from "ng2-currency-mask";
 CurrencyMaskModule
