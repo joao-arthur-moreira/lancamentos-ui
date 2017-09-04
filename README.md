@@ -1,3 +1,9 @@
+# Infos
+Instalando currencyMask:
+npm install ng2-currency-mask --save
+import { CurrencyMaskModule } from "ng2-currency-mask";
+CurrencyMaskModule
+
 # LancamentosUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.

@@ -16,6 +16,10 @@ label {
   }
 }
 
+.ui-dropdown-filter-container {
+  width: 100%;
+}
+
 .col-valor {
   width: 120px;
   text-align: right;
