@@ -11,6 +11,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { PessoasModule } from './pessoas/pessoas.module';
 import { CoreModule } from './core/core.module';
+import { PessoaService } from './pessoas/pessoa.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { CoreModule } from './core/core.module';
     PessoasModule
 
   ],
-  providers: [LancamentoService],
+  providers: [LancamentoService, PessoaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

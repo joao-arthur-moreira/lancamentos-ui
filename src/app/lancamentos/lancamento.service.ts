@@ -15,7 +15,7 @@ export class LancamentoFiltro {
 @Injectable()
 export class LancamentoService {
 
-  lancamentosUrl = 'http://localhost:8080/lancamentos';
+  readonly lancamentosUrl = 'http://localhost:8080/lancamentos';
 
   constructor(private http: Http) { }
 
@@ -48,7 +48,7 @@ export class LancamentoService {
         const resultado = {
           lancamentos,
           total: responseJson.totalElements
-        }
+        };
 
         return resultado;
       });
