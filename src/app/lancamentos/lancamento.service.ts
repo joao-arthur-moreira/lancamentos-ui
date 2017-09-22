@@ -54,4 +54,13 @@ export class LancamentoService {
       });
   }
 
+  excluir(codigo: number): Promise<void> {
+    const headers = new Headers();
+    headers.append('Authorization', 'Basic YWRtaW5AbGFuY2FtZW50b3NhcGkuY29tOmFkbWlu');
+
+    return this.http.delete(`${this.lancamentosUrl}/${codigo}`, { headers })
+      .toPromise()
+      .then(() => null);
+  }
+
 }
