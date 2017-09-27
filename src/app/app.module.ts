@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ToastyModule } from 'ng2-toasty';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
@@ -22,6 +23,8 @@ import { PessoaService } from './pessoas/pessoa.service';
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+
+    ToastyModule.forRoot(),
 
     CoreModule,
     LancamentosModule,
