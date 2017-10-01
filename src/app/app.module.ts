@@ -12,14 +12,9 @@ import { LancamentosPesquisaComponent } from './lancamentos/lancamentos-pesquisa
 import { LancamentoCadastroComponent } from './lancamentos/lancamento-cadastro/lancamento-cadastro.component';
 import { PessoasPesquisaComponent } from './pessoas/pessoas-pesquisa/pessoas-pesquisa.component';
 import { PessoaCadastroComponent } from './pessoas/pessoa-cadastro/pessoa-cadastro.component';
+import { PaginaNaoEncontradaComponent } from './core/pagina-nao-encontrada.component';
+import { AppRoutingModule } from './app-routing.module';
 
-
-const rotas: Routes = [
-  { path: 'lancamentos', component: LancamentosPesquisaComponent },
-  { path: 'lancamentos/novo', component: LancamentoCadastroComponent },
-  { path: 'pessoas', component: PessoasPesquisaComponent },
-  { path: 'pessoas/nova', component: PessoaCadastroComponent }
-];
 
 @NgModule({
   declarations: [
@@ -29,12 +24,11 @@ const rotas: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
-    RouterModule.forRoot(rotas),
 
     CoreModule,
     LancamentosModule,
-    PessoasModule
-
+    PessoasModule,
+    AppRoutingModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]
