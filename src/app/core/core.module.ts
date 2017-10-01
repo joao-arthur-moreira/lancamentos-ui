@@ -9,10 +9,12 @@ import { PessoaService } from '../pessoas/pessoa.service';
 import { ErrorHandlerService } from './error-handler.service';
 import { ConfirmationService } from 'primeng/components/common/api';
 import { CategoriaService } from '../categorias/categoria.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
+    RouterModule,
 
     ToastyModule.forRoot(),
     ConfirmDialogModule,
