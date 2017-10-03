@@ -11,6 +11,7 @@ import { ConfirmationService } from 'primeng/components/common/api';
 import { CategoriaService } from '../categorias/categoria.service';
 import { RouterModule } from '@angular/router';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
+import { AuthService } from '../seguranca/auth.service';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     PessoaService,
     ErrorHandlerService,
     CategoriaService,
+    AuthService,
 
     ConfirmationService,
     { provide: LOCALE_ID, useValue: 'pt-BR' }
