@@ -1,5 +1,6 @@
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { JwtHelper } from 'angular2-jwt';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { ToastyModule } from 'ng2-toasty';
@@ -33,6 +34,7 @@ import { AuthService } from '../seguranca/auth.service';
     ErrorHandlerService,
     CategoriaService,
     AuthService,
+    JwtHelper,
 
     ConfirmationService,
     { provide: LOCALE_ID, useValue: 'pt-BR' }
